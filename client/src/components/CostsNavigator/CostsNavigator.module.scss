@@ -1,0 +1,29 @@
+@import "../../scss/variables.scss";
+
+.costsNavigatorWrapper {
+  display: flex;
+  justify-content: center;
+  padding: 5px 0;
+  padding-top: 25px;
+  background-color: $background-light-secondary-color;
+}
+
+.costsNavLink {
+  margin-right: 24px;
+  font-size: 16px;
+  padding: 6px 0;
+  color: $text-color;
+  font-weight: 700;
+
+  &:hover {
+    border-bottom: 3px solid $lightgreen-color;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.activeNavLink {
+  border-bottom: 3px solid $lightgreen-color;
+}

@@ -1,0 +1,60 @@
+@import "../../../scss/variables.scss";
+
+.submitBtn {
+  display: block;
+  margin: 0 auto;
+
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+
+  padding: 10px 50px;
+
+  border-radius: 5px;
+
+  background-color: transparent;
+
+  position: relative;
+  overflow: hidden;
+
+  transition: all 0.3s ease-in-out;
+
+  cursor: pointer;
+
+  &:disabled {
+    background-color: rgb(190, 190, 190);
+    opacity: 0.2;
+  }
+
+  @media (max-width: 380px) {
+    font-size: 12px;
+  }
+}
+
+.submitBtn.light {
+  border: 1px solid $text-lightgray-color;
+  color: $text-lightgray-color;
+
+  @media (min-width: 1200px) {
+    &:hover {
+      background-color: $text-lightgray-color;
+    }
+  }
+}
+
+.submitBtn.cancelStyle {
+  border-color: $error-color;
+  color: $error-color;
+  @media (min-width: 1200px) {
+    &:hover {
+      background-color: $error-color;
+    }
+  }
+}
+
+.submitBtn:hover {
+  @media (min-width: 1200px) {
+    &.light {
+      color: #fff;
+    }
+  }
+}

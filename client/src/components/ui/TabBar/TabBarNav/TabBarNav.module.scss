@@ -1,0 +1,33 @@
+@import "../../../../scss/variables.scss";
+
+.navItem {
+  flex: 1 1 auto;
+  background-color: #fff;
+
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+
+  position: relative;
+}
+
+.navItem.active::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 4px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.navItem.active.light::after {
+  background-color: $border-blue-light-color;
+}
+
+.navItem.light {
+  color: $text-lightblue-color;
+}
+
+.navItem.light.active {
+  color: $text-blue-color;
+}

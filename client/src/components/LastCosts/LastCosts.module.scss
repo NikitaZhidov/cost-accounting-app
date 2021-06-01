@@ -1,0 +1,32 @@
+@import "../.../../../scss/variables.scss";
+
+.lastCostsContent {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.blockTitle {
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+
+  &.light {
+    color: $text-color;
+  }
+}
+
+.lastCostsTitle {
+  margin: 0px 15px 0px 30px;
+}
+
+.lastCostsHeader {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 20px;
+}
+
+.lastCostItem {
+  max-height: 340px;
+  overflow: auto;
+}

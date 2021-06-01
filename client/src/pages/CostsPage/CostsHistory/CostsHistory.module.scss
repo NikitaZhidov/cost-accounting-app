@@ -1,0 +1,47 @@
+@import "../../../scss/variables.scss";
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  padding: 30px 0;
+  background-color: $background-light-secondary-color;
+
+  button {
+    margin: 0;
+    margin-right: 24px;
+  }
+}
+
+.costsHistoryWrapper {
+  padding-bottom: 25px;
+}
+
+.costsAreaWrapper {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.costItem {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.paginationArea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: 700px) {
+    flex-direction: column-reverse;
+
+    div {
+      margin-top: 10px;
+    }
+  }
+
+  button {
+    margin: 0;
+  }
+}

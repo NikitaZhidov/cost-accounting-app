@@ -1,0 +1,30 @@
+@import "../../scss/variables.scss";
+
+.categoriesWrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 80px);
+  grid-auto-rows: minmax(80px, auto);
+  overflow: auto;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.addBtn {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+
+  &.light svg {
+    fill: $text-lightgray-color;
+  }
+  @media (min-width: 1200px) {
+    cursor: pointer;
+    &.light svg:hover {
+      fill: $gray-color;
+      cursor: pointer;
+    }
+  }
+}

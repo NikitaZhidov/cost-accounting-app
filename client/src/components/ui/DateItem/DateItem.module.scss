@@ -1,0 +1,37 @@
+@import "../../../scss/variables.scss";
+
+.dateItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  padding: 5px;
+  border-radius: 5px;
+
+  margin-right: 25px;
+  @media (min-width: 1200px) {
+    &.light:hover {
+      background-color: $background-light-secondary-color;
+    }
+  }
+  &.light.active {
+    background-color: $background-light-secondary-color;
+  }
+}
+
+.date {
+  margin-bottom: 3px;
+  &.light {
+    color: $text-color;
+  }
+}
+
+.dateString {
+  font-size: 11px;
+  min-height: 10px;
+  &.light {
+    color: $text-superlightgray-color;
+  }
+}

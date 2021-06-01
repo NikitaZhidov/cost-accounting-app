@@ -1,0 +1,37 @@
+@import "../../../scss/variables.scss";
+
+.submitBtn {
+  display: block;
+  margin: 0 auto;
+
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+
+  padding: 10px 50px;
+
+  border-radius: 20px;
+
+  background-color: transparent;
+
+  position: relative;
+  overflow: hidden;
+
+  transition: all 0.3s ease-in-out;
+
+  cursor: pointer;
+}
+
+.submitBtn.light {
+  border: 1px solid $border-blue-light-color;
+  color: $text-lightgray-color;
+
+  &:hover {
+    background-color: $border-blue-light-color;
+  }
+}
+
+.submitBtn:hover {
+  &.light {
+    color: #fff;
+  }
+}

@@ -1,0 +1,29 @@
+@import "../../../scss/variables";
+
+.categoryItem {
+  margin-right: 10px;
+}
+
+.selectCategoryWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.selectCategoryBtn {
+  &.light svg {
+    fill: $text-lightgray-color;
+  }
+  @media (min-width: 1200px) {
+    &.light svg:hover {
+      fill: $gray-color;
+      cursor: pointer;
+    }
+  }
+}
+
+.selectCategoryBtn {
+  display: flex;
+  align-items: center;
+  padding-bottom: 24px;
+  cursor: pointer;
+}

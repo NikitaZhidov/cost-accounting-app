@@ -1,0 +1,17 @@
+@import "../../../scss/variables";
+
+.datePicker {
+  cursor: pointer;
+}
+
+.selectDateBtn {
+  &.light svg {
+    fill: $text-lightgray-color;
+  }
+  @media (min-width: 1200px) {
+    &.light svg:hover {
+      fill: $gray-color;
+      cursor: pointer;
+    }
+  }
+}

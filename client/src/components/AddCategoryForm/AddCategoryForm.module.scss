@@ -1,0 +1,35 @@
+@import "../../scss/variables.scss";
+
+.labelName {
+  font-size: 18px;
+  margin: 0px 0px 15px 10px;
+
+  &.light {
+    color: $text-lightgray-color;
+  }
+}
+
+.inputName {
+  margin-bottom: 40px;
+}
+
+.icons {
+  margin-bottom: 40px;
+}
+
+.sumbitBtns {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+
+  @media (max-width: 700px) {
+    flex-direction: column;
+    button {
+      margin-bottom: 20px;
+      width: 90%;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

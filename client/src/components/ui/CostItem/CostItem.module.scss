@@ -1,0 +1,88 @@
+@import "../../../scss/variables.scss";
+.costItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+
+  border-radius: 10px;
+  cursor: pointer;
+  @media (min-width: 1200px) {
+    &.light:hover {
+      background-color: $background-light-secondary-color;
+    }
+  }
+}
+
+.costMain {
+  display: flex;
+  max-width: 80%;
+  align-items: center;
+  flex: 1 1 auto;
+}
+
+.costInfo {
+  flex: 1 1 auto;
+  max-width: 100%;
+}
+
+.categoryIcon {
+  margin-right: 10px;
+  min-width: 42px;
+}
+
+.categoryName {
+  font-size: 14px;
+  margin-bottom: 2px;
+  max-width: 95%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+
+  &.light {
+    color: $text-color;
+  }
+
+  @media (max-width: 700px) {
+    font-size: 12px;
+  }
+}
+
+.comment {
+  font-size: 11px;
+  max-width: 50%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+
+  padding: 2px 0;
+
+  &.light {
+    color: $text-superlightgray-color;
+  }
+
+  @media (max-width: 700px) {
+    font-size: 9px;
+  }
+}
+
+.sum {
+  font-size: 16px;
+  max-width: 30%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  &.light {
+    color: $text-color;
+  }
+
+  &.big {
+    font-size: 20px;
+  }
+
+  @media (max-width: 700px) {
+    &.big {
+      font-size: 14px;
+    }
+    font-size: 12px;
+  }
+}

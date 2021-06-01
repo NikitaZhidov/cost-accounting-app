@@ -1,0 +1,78 @@
+@import "../../../scss/variables.scss";
+
+.DropDownWrapper {
+  position: relative;
+}
+
+.DropDown {
+  position: absolute;
+  opacity: 0;
+
+  padding: 4px 0;
+
+  border-radius: 6px;
+
+  transform: translateY(-10px);
+  visibility: hidden;
+  transition: all 0.2s ease-in-out;
+
+  display: block;
+  overflow: hidden;
+
+  margin-top: 3px;
+
+  z-index: 1000;
+
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.03);
+
+  border: 1px solid #e8e8eb;
+
+  &.isOpen {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+  }
+
+  div {
+    cursor: pointer;
+  }
+}
+
+.openDropDown {
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.DropDownActive {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+svg {
+  transition: all 0.2s linear;
+}
+
+.rotated {
+  transform: rotate(180deg);
+}
+
+.DropDownItem {
+  text-align: center;
+  background-color: #fff;
+  padding: 4px 8px 4px;
+  text-align: center;
+
+  position: relative;
+
+  &:last-child::after {
+    display: none;
+  }
+
+  &:hover {
+    background-color: #0366d6;
+    color: #fff;
+  }
+}

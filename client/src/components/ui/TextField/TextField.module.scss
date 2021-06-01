@@ -1,0 +1,52 @@
+@import "../../../scss/variables.scss";
+
+.textFieldBlock {
+  display: flex;
+  flex-direction: column;
+
+  width: 80%;
+  margin: 0 auto;
+
+  font-family: "Montserrat", sans-serif;
+
+  position: relative;
+
+  label {
+    font-size: 18px;
+    margin: 0px 0px 5px 10px;
+  }
+}
+
+.textFieldBlock.light {
+  color: $text-lightgray-color;
+}
+
+.textField {
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 18px;
+}
+
+.textField.light {
+  border: 1px solid $border-light-color;
+}
+
+.textField.error {
+  border: 1px solid $error-color;
+}
+
+.errorMsg {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: $error-color;
+  transform: translateY(-140%);
+  &.withLabel {
+    transform: translateY(0);
+  }
+
+  @media (max-width: 700px) {
+    top: 110%;
+    transform: translateY(0);
+  }
+}

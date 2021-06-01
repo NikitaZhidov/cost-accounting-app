@@ -1,0 +1,41 @@
+@import "../../scss/variables.scss";
+
+.selectWrapper {
+  display: flex;
+}
+
+.selectItem {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 10px;
+
+  margin-right: 10px;
+
+  cursor: pointer;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &.light {
+    color: $text-superlightgray-color;
+    border: 1px solid $text-superlightgray-color;
+
+    @media (min-width: 900px) {
+      &:hover {
+        color: $text-color;
+        border: 1px solid $text-color;
+        transition: all 0.2s ease-in-out;
+      }
+    }
+
+    &.active {
+      color: $text-color;
+      border: 1px solid $text-color;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+@import "../../../scss/variables.scss";
+
+.dayName {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 20px;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  padding: 7px 0;
+  z-index: 75;
+}
+
+.wrapper {
+  margin-bottom: 30px;
+}
+
+.costItem {
+  position: relative;
+
+  &:last-child::after {
+    display: none;
+  }
+}
+
+.costItem::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  height: 1px;
+  width: 80%;
+  transform: translateX(-50%);
+}
+
+.costItem.light::after {
+  background-color: $border-light-color;
+}

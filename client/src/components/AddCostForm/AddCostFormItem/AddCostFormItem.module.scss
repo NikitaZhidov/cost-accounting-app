@@ -1,0 +1,31 @@
+@import "../../../scss/variables.scss";
+
+.wrapper {
+  padding: 5px;
+  position: relative;
+}
+
+.label {
+  font-size: 14px;
+  margin-bottom: 10px;
+
+  &.light {
+    color: $text-superlightgray-color;
+  }
+}
+
+.childrenWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.errorMsg {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  transform: translateY(100%);
+
+  color: $error-color;
+  font-size: 8px;
+}

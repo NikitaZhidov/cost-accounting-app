@@ -1,0 +1,35 @@
+@import "../../scss/variables.scss";
+
+.iconsWrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 50px);
+  grid-auto-rows: minmax(50px, auto);
+  overflow: scroll;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+  max-height: 400px;
+  overflow: auto;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  @media (min-width: 1200px) {
+    cursor: pointer;
+    &.light:hover {
+      background-color: $background-light-secondary-color;
+    }
+  }
+}
+
+.iconActive {
+  &.light {
+    background-color: $background-light-secondary-color;
+  }
+}

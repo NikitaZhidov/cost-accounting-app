@@ -1,0 +1,43 @@
+@import "../../../scss/variables.scss";
+
+.categoriesContainer {
+  width: 28%;
+  max-height: 550px;
+
+  @media (max-width: 1200px) {
+    width: 90%;
+    margin-bottom: 30px;
+  }
+}
+
+.lastCostsTitle {
+  margin: 0px 0px 20px 30px;
+}
+
+.lastCostsContainer {
+  width: 35%;
+  @media (max-width: 1200px) {
+    width: 90%;
+  }
+}
+
+.costsSection {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 0;
+
+  @media (max-width: 1200px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.addCostSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 35px 0;
+  &.light {
+    background-color: $background-light-secondary-color;
+  }
+}

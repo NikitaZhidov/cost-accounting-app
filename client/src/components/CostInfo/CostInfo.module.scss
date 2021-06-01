@@ -1,0 +1,95 @@
+@import "../../scss/variables.scss";
+
+.costInfoWrapper {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  @media (max-width: 900px) {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+
+.categoryArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-right: 1px solid;
+  padding: 0 8%;
+  @media (max-width: 900px) {
+    border-right: 0;
+    padding: 0;
+    padding: 15px 0;
+    border-top: 1px solid;
+    margin-top: 15px;
+  }
+  &.light {
+    border-color: $border-light-color;
+  }
+}
+
+.categoryIcon {
+  width: 70px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.categoryName {
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+  &.light {
+    color: $text-color;
+  }
+}
+
+.costInfoArea {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 70%;
+}
+
+.costComment {
+  font-size: 18px;
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 40px;
+
+  @media (max-width: 900px) {
+    margin-bottom: 15px;
+  }
+
+  &.light {
+    color: $text-lightgray-color;
+  }
+}
+
+.costSum {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 28px;
+  @media (max-width: 900px) {
+    margin-top: 28px;
+  }
+  word-wrap: break-word;
+  max-width: 100%;
+  &.light {
+    color: $text-color;
+  }
+}
+
+.costUserName {
+  font-size: 16px;
+  font-weight: 300;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  opacity: 0.2;
+  &.light {
+    color: $text-color;
+  }
+}

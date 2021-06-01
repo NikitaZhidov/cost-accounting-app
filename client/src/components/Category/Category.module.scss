@@ -1,0 +1,65 @@
+@import "../../scss/variables.scss";
+.Category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 5px;
+  position: relative;
+
+  user-select: none;
+
+  max-height: 80px;
+  min-width: 65px;
+
+  @media (min-width: 1200px) {
+    &.light:hover {
+      background-color: $background-light-secondary-color;
+    }
+  }
+
+  &.light.active {
+    background-color: $background-light-tertiary-color;
+  }
+}
+
+.title {
+  font-size: 12px;
+  font-family: Montserrat, "sans-serif";
+  height: 26px;
+  max-width: 72px;
+
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-align: center;
+  max-lines: 2;
+  max-height: 2.4em;
+  line-height: 1.1em;
+  .light {
+    color: $text-color;
+  }
+}
+
+.icon {
+  margin-bottom: 10px;
+}
+
+.marked {
+  position: absolute;
+  display: block;
+  top: 5px;
+  right: 5px;
+
+  width: 0;
+  height: 0;
+
+  border-style: solid;
+  border-width: 0 10px 10px 0;
+
+  &.light {
+    border-color: transparent $background-light-tertiary-color transparent
+      transparent;
+  }
+}
